@@ -1,0 +1,421 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Titillium Web;
+	background-color: black;
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.nav-bar {
+	top: 0;
+	z-index: 1;
+	position: fixed;
+	height: 85px;
+	width: 100%;
+}
+
+.nav-inner {
+	max-width: 1366px;
+	height: 85px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.logo img {
+	float: left;
+	z-index: 1;
+	width: 80px;
+}
+
+.nav-bar ul {
+	float: right;
+}
+
+li.first_list {
+	display: inline-block;
+	padding-right: 10px;
+	text-align: center;
+	color: white;
+	vertical-align: middle;
+	font-size: 1.47em;
+	padding-left: 14px;
+	height: 45px;
+	margin-left: -4px;
+	position: relative;
+}
+
+li.first_list:hover {
+	 background-color: #15418c;
+}
+
+.dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	background-color: #15418c;
+	padding: 10px 0;
+}
+
+.dropdown ul {
+	padding: 0;
+	width: 240px;
+	text-align: left;
+	font-size: 18px;
+	line-height: 20px 10px;
+
+}
+
+.dropdown li {
+	padding: 10px 20px;
+}
+
+.dropdown li:last-child {
+	border-top: 1px solid white;
+}
+
+li.first_list:hover .dropdown {
+	display: block;
+}
+
+.search_wrapper {
+	position: relative;
+}
+
+.search {
+	padding: 10px 36px 10px 10px;
+	border: none;
+	background-color: #333333;
+	box-sizing: border-box;
+	width: 156px;
+	vertical-align: middle;
+}
+
+.search-button {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	width: 26px;
+	height: 26px;
+	background-color: lightgray;
+	vertical-align: middle;
+	border: none;
+}
+
+.header {
+	color: white;
+	height: 215px;
+	max-width: 1366px;
+	position: relative;
+	margin: 85px auto 0;
+}
+
+h1 {
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+}
+
+.main-nav {
+	margin: 0 auto;
+	height: 40px;
+	max-width: 1366px;
+	background-color: #555555;
+	color: white;
+	cursor: pointer;
+}
+
+.nav-list {
+	margin: 0;
+	padding: 0;
+}
+
+.nav-list li {
+	display: inline-block;
+	padding: 0 14px;
+	line-height: 40px;
+	border-right: 1px solid #777777;
+	font-size: 15px;
+	margin-left: -4px;
+}
+
+.main-nav .nav-list li:hover {
+	background-color: #5d7fb9;
+}
+
+.main-nav .nav-list li:last-child {
+	border-right: none;
+}
+
+.main-nav .nav-list li:first-child {
+	background-color: #5d7fb9;
+	border-right: none;
+	margin: 0;
+}
+
+.isus {
+	max-width: 1366px;
+	margin: 0 auto;
+	display: flex;
+	cursor: pointer;
+}
+
+.sidebar {
+	color: white;
+	background-color: #252931;
+	width: 22.7%;
+	padding-bottom: 135px;
+	cursor: pointer;
+}
+
+.sidebar header {
+	background-color: #303540;
+    padding: 10px;
+   	width: 130px;
+   	font-size: 15px;
+   	display: inline-block;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 20px 0;
+	border-bottom: 1px solid #303540;
+}
+
+.sidebar li {
+	display: block;
+	font-size: 15px;
+	padding: 10px 32px;
+}
+
+
+.sidebar li:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.images_container {
+	width: 77.3%;
+}
+
+.top {
+	display: flex;
+	margin: 15px 0 15px 15px;
+}
+
+.top_left {
+	width: 50%;
+	height: 615px;
+	background-position: center;
+	margin-right: 15px;
+	position: relative;
+}
+
+.blue_tag {
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+	background-color: #5d7fb9;
+	opacity: 0.85;
+	color: white;
+	line-height: 23px;
+	padding: 5px 10px;
+	margin: 0;
+	font-weight: bold;
+	font-size: 19px;
+
+}
+
+.blue_tag:hover {
+	opacity: 1;
+}
+
+.white_tag {
+	background-color: white;
+	opacity: 0.85;
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	width: 100%;
+	font-weight: bold;
+	font-size: 19px;
+	padding: 5px 10px;
+	line-height: 23px;
+}
+
+.white_tag:hover {
+	opacity: 1;
+}
+
+.blue_tag p {
+	margin: 0;
+}
+
+.white_tag p {
+	margin: 0;
+}
+
+.top_right {
+	width: 50%;
+	height: 600px;
+}
+
+.top_right_top {
+	height: 50%;
+	display: flex;
+}
+
+.top_right_bottom {
+	height: 50%;
+	margin-top: 15px;
+	background: url('https://www.nasa.gov/sites/default/files/styles/2x1_cardfeed/public/thumbnails/image/nasa-logo-web-rgb.jpg');
+	background-position: center;
+	position: relative;
+}
+
+.top_right_top_right, .top_right_top_left {
+	width: 50%;
+	background-position: center;
+	position: relative;
+}
+
+.top_right_top_left {
+	margin-right: 15px;
+}
+
+.bottom_top {
+	height: 300px;
+	display: flex;
+}
+
+.bottom_top_left {
+	width: 75%;
+	background: url('https://www.nasa.gov/sites/default/files/styles/3x1_cardfeed/public/thumbnails/image/img_3351.jpg');
+	background-position: center;
+ 	height: 100%;
+ 	margin-left: 15px;
+ 	margin-right: 15px;
+ 	position: relative;
+}
+
+.bottom_top_right {
+	width: 25%;
+	background: url('https://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/group_photo.png');
+	background-position: center;
+	height: 100%;
+	position: relative;
+}
+
+.bottom_bottom {
+	display: flex;
+	height: 300px;
+	margin-top: 15px;
+}
+
+.bottom_bottom_left {
+	width: 75%;
+	height: 100%;
+	display: flex;
+}
+
+.bottom_bottom_1 {
+	width: 33.333%;
+	height: 100%;
+	margin-left: 15px;
+	background: url('https://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/presentation3_1.jpg');
+	background-position: center;
+	position: relative;
+}
+
+.bottom_bottom_2 {
+	width: 33.333%;
+	height: 100%;
+	margin-left: 15px;
+	background: url('https://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/nasa_orion_spacecraft_1.jpg');
+	background-position: center;
+	position: relative;
+}
+
+.bottom_bottom_3 {
+	width: 33.333%;
+	height: 100%;
+	margin-left: 15px;
+	background: url('https://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/mera_bonneville_color_med.jpg');
+	background-position: center;
+	position: relative;
+}
+
+.bottom_bottom_right {
+	width: 24.5%;
+	height: 100%;
+	margin-left: 15px;
+	background: url('https://www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/lrc-2018-h1_p_issdownlink-071020.jpg');
+	background-position: center;
+	position: relative;
+}
+
+.show_more {
+	max-width: 100%;
+	text-align: center;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.show_more p {
+	background-color: #15418c;;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	height: 40px;
+	padding: 8px 7.5px 15px;
+}
+
+.show_more p:hover{
+	background-color: #5d7fb9;
+}
+
+#footer {
+	width: 100%;
+	height: 212px;
+	margin-left: 15px;
+}
+
+.footer_logo img {
+	width: 80px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#footer p {
+	font-size: 14px;
+	display: inline-block;
+	padding-bottom: 8px;
+}
+
+#links li {
+	display: inline-block;
+	padding-right: 30px;
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#links li:hover {
+	text-decoration: underline;
+
+}
